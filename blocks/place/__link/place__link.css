@@ -9,5 +9,5 @@
   text-decoration-line: underline;
   color: #FFFFFF;
   padding-top: 12px;
-  padding-bottom: 48px;
+  grid-area: website;
 }
