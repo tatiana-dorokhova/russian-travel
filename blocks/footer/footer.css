@@ -1,0 +1,10 @@
+.footer {
+  width: calc(100% - 2*48px);
+  min-width: 288px;
+  max-width: 1184px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2A2C2F;
+  min-height: 18px;
+  padding: 92px 48px 24px;
+}
