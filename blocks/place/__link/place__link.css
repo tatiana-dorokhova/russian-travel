@@ -11,3 +11,7 @@
   padding-top: 12px;
   grid-area: website;
 }
+
+.place__link:hover {
+  opacity: 0.8;
+}

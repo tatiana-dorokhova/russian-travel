@@ -1,11 +1,24 @@
 .header {
   width: calc(100% - 2*48px);
-  min-width: 288px;
-  max-width: 1184px;
-  min-height: 52px;
+  min-width: 320px;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: #2A2C2F;
-  padding: 28px 48px 0;
+  padding: 28px 0 0;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    width: calc(100% - 2*24px);
+    padding: 28px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: calc(100% - 2*16px);
+  padding: 16px 0 0;
+  }
 }

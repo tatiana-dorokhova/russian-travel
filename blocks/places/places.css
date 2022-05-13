@@ -1,7 +1,29 @@
 .places {
-  width: 100%;
+  width: calc(100% - 2*148px);
+  min-width: 320px;
   max-width: 984px;
   margin: 0 auto;
   padding: 0;
-  display: grid;
+  /*border: 1px red solid;*/
+}
+
+@media screen and (max-width: 1279px) {
+  .places {
+    width: 100%;
+    max-width: 928px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .places {
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .places {
+    width: 100%;
+    max-width: 320px;
+  }
 }

@@ -1,7 +1,11 @@
 .lead__image {
   background-image: url(../../../images/lead__image.png);
-  object-fit: cover;
-  width: 984px;
-  height: 615px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*object-fit: cover;*/
+  min-width: 984px;
+  max-height: 615px;
   margin: 64px auto 0;
+  /* пропорциональное размеру картинки сжатие */
+  padding-bottom: 62.5%;
 }
