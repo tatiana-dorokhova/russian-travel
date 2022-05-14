@@ -14,3 +14,18 @@
 .place__text:last-of-type {
   padding-bottom: 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .place__text {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place__text {
+    font-size: 16px;
+    line-height: 1.63;
+    padding: 0 16px;
+  }
+}

@@ -6,7 +6,6 @@
   align-self: flex-start;
   padding: 92px 0 0 0;
   padding-left: calc((100% - 984px)/2);
-  border: 1px red solid;
 }
 
 @media screen and (max-width: 1279px) {
