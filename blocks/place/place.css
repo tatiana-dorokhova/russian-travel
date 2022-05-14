@@ -1,6 +1,5 @@
 .place {
   width: 100%;
-  max-width: 984px;
   display: grid;
   grid-template-columns: fit-content(460px) fit-content(484px);
   grid-template-rows: repeat(2, min-content);

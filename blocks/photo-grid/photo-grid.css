@@ -1,9 +1,32 @@
 .photo-grid {
-  max-width: 1184px;
+  width: calc(100% - 2*48px);
   background-color: #2A2C2F;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   gap: 16px;
   padding: 92px 48px;
+}
+
+@media screen and (max-width: 1279px) {
+  .photo-grid {
+    width: calc(100% - 2*48px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .photo-grid {
+    width: calc(100% - 2*24px);
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo-grid {
+    width: calc(100% - 2*16px);
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 12px;
+  }
 }
