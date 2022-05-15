@@ -5,16 +5,14 @@
   z-index: 1;
   display: flex;
   width: 100%;
+  min-height: 740px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: white;
   text-decoration: none;
   background-image: url('../../../images/cover/coverBackground.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 62.5%;
-
 }
 
 /* затемнить при наведении на 0.3 */
@@ -29,10 +27,35 @@
   content: '';
   opacity: .3;
   transition: .8s;
-  border: 2px white solid;
 }
 
 /* затемнить при наведении до 0.8 в течение 0.8 секунд*/
 .cover__link:hover::before {
   opacity: .8;
 }
+
+@media screen and (max-width: 1279px) {
+  .cover__link {
+    min-height: 640px;
+  }
+ }
+
+ @media screen and (max-width: 1023px) {
+  .cover__link {
+    min-height: 480px;
+  }
+ }
+
+ @media screen and (max-width: 767px) {
+  .cover__link {
+    min-height: 300px;
+  }
+ }
+
+ @media screen and (max-width: 459px) {
+  .cover__link {
+    min-height: 200px;
+  }
+ }
+
+
