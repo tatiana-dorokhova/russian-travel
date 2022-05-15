@@ -32,6 +32,7 @@
 /* затемнить при наведении до 0.8 в течение 0.8 секунд*/
 .cover__link:hover::before {
   opacity: .8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1279px) {
